@@ -1,0 +1,31 @@
+#|
+Luis Revilla - A01022320
+Homework 2 - Racket functions
+08/09/2020
+|#
+
+#lang racket
+
+(define (is-triangle? a b c)
+  (if (and
+       (> a 0)(> b 0) (> c 0) (>(+ a b)c)(>(+ b c)a) (>(+ c a)b))
+  #t
+  #f))
+
+(define (triangle-type a b c)
+  (if (is-triangle? a b c)
+   (cond
+     [(= a b c)'EQUILATERAL]
+     [(or (= a b)(= a c)(= b c)) 'ISOSCELES]
+     [else 'SCALENE])
+   'INVALID)
+  )
+
+(define (parking-ticket hours)
+  (cond 
+   [(< hours 3) 2]
+   [(and (< 3 hours) (< hours 16)) (+ (* 0.5 (ceiling hours)) 2)]
+   [else 10]
+   )
+  )
+

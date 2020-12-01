@@ -1,0 +1,41 @@
+401011611332
+/   Modelo Markowitz - Selección de portafolio de Inversion \
+
+Entrada: Varios archivos csv (ClaveCompañia / Fecha / PrecioCierre)
+Una lista que contenga nCompañias (n = numero de archivos) con sus respectivos datos
+Sacar la Matriz de Covarianza (NOTA Materiz o sacar los datos correspondientes)
+
+//Datos por compañia - IMPRIMIR
+Sacar el rendimiento por día de cada compañia (NOTA (Precioacatual/ PrecioAnterior)-1)
+Determinar la BETA (BETA = Covarianza/CovarianzaIPC)
+Determinar la varianza (PrecioCierre)
+Determinar la desviación estandar
+TasaLibreRiesgo - ESCRITURA POR USUARIO
+Determinar RendimeintoEsperado anual del mercado
+
+// Depues POR COMPAÑIA
+
+Calcular el rendimiento esperado (FORMULA)
+Calcular factor Sharpe (Formula)
+
+
+//Optimizar el portafolio
+//Checkpoint 
+
+
+PROYECTO 
+||||||||||||||||||||||
+
+
+/   Backtesting Indicadores Financieros  \
+Entrada de archivo csv (ClaveCompañia / Fecha / PrecioCierre / Precio Max / Precio Min)
+Calcular SMA por día (5 10 20 50 100 200 días) // Medias
+Calcular EMA por día (5 10 20 50 100 200 días)
+Calcular TMA por día (5 10 20 50 100 200 días)
+Calcular MACD por día (5 10 20 50 100 200 días)
+Calcular RSI por día (5 10 20 50 100 200 días)
+Calcular STOC por día (5 10 20 50 100 200 días)
+Calcular rendimiento por dia (NOTA (Precioacatual/ PrecioAnterior)-1)
+
+Calcular el cruce entre medias (FORMULA)
+/   Datos van a mostrar que indicador funciona para obtener un mejor rendimiento a partir de estos dato    \

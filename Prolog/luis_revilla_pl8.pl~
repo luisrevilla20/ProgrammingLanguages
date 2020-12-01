@@ -1,0 +1,20 @@
+/*
+HW_08-Prolog lists
+
+Luis Ortiz
+A01022320
+*/
+
+/*
+ in_list : Take two arguments, a list and an element, and determine if the element can be found inside the list. Example:
+
+?- in_list([e, h, s, y, u, c, a, w, h], u).
+true
+?- in_list([s, f, t, e, h], u).
+false.
+*/
+
+in_list([],L) :- !.
+in_list([Head|Tail], L) :-
+    in_list(Tail, L),
+    L = Head.

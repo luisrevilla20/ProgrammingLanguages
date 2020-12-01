@@ -1,0 +1,56 @@
+/****************************
+Luis Ortiz Revilla - A01022320
+*****************************/
+BNF
+1) do-whiile in C
+
+<do> ::= do {<code>} while
+<while> ::= while (<condition>)
+<condition> ::= <value><operator> | <value>| <operator><condition>
+<value> ::= <letter> | <number> | true | false
+<number> ::= 1| 2| 3| 4| 5| 6| 7| 8| 9| 0
+<letter> ::= a| b| c| ... | z
+<operator> ::= == |< |> | <= | >=
+
+2) Conditional (if/elif/else) Python
+
+<if> ::= if <conditionn>: <code>
+<else> ::= <if> else: <code> | <if> <elif> else: <code>
+<elif> ::= <if> elif <condition>: code |<if> <elif> elif <condition>: code
+<condition> ::= <value><operator> | <value>| <operator><condition>
+<value> ::= <letter> | <number> | true | false
+<number> ::= 1| 2| 3| 4| 5| 6| 7| 8| 9| 0
+<letter> ::= a| b| c| ... | z
+<operator> ::= == |< |> | <= | >=
+
+3) Declaration of sub class in Java
+
+<class> ::= class Super {<constructor> <code>}
+<constructor> ::= public Super(<variables>){<code>}
+<variables> ::= <variable>| <variable><variable>
+<variable> ::= string| int| double| ...
+<subclass> ::= class Sub extends Super {<subconstructor> <code>}
+<subconstructor> ::= public Sub (<variables>){super(<variables>)<code>}
+<declaration> ::= Super name = new Sub(<variables>);
+
+EBNF
+1) do-whiile in C
+
+DO ::= do '{' CODE '}' WHILE
+WHILE ::= while '(' {CONDITION} | CONDITION ')'
+
+
+2) Conditional (if/elif/else) Python
+
+CONDITIONAL ::= IF [{ELIF}] [ELSE]
+IF ::= if CONDITION ':' CODE
+ELIF ::= elif CONDITION ':' CODE
+ELSE ::= else: CODE
+
+3) Declaration of sub class in Java
+
+DECLARATION ::= SUPER NAME '= new' SUB '(' [{VARIABLE}]');'
+SUPERCLASS ::= class Super '{' {CONSTRUCTOR} CODE'}'
+CONSTRUCTOR ::= public Super '(' [{VARIABLE}]') {'CODE'}'
+SUBCLASS ::= public Sub extends Super '{' {SUBCONSTRUCTOR} CODE'}'
+SUBCONSTRUCTOR ::= public Sub '(' [{VARIABLE}]'){' super '(' [{VARIABLE}]')' CODE '}'
